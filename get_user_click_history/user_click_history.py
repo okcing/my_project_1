@@ -33,13 +33,9 @@ if __name__ == '__main__':
     path2 = dir_file[-2]
 
     all_file_1 = os.listdir(path1)
-    # logging.INFO('all_file_1: %s', 'hhhh')
-
     all_file_1.sort(reverse=True)
-    # logger.INFO('after sorted, all_file_1: %s', all_file_1)
 
     for f in all_file_1:
-        # logger.INFO('path+filename', path1 + '/' + f)
         data_path = path1 + '/' + f
         clk_data = open(data_path, 'r').readlines()
 
@@ -65,7 +61,6 @@ if __name__ == '__main__':
     all_file_2.sort(reverse=True)
 
     for f in all_file_2:
-        # logger.INFO('path+filename', path1 + '/' + f)
         data_path = path2 + '/' + f
         clk_data = open(data_path, 'r').readlines()
 
@@ -87,7 +82,7 @@ if __name__ == '__main__':
 
     print time.time() - start
     start = time.time()
-    with open('{0}/data/get_user_click_history/click_his.json', 'w') as json_file:
+    with open('{0}/data/get_user_click_history/click_his.json'.format(PATH), 'w') as json_file:
         json.dump(user_click_his, json_file)
     print time.time() - start
 

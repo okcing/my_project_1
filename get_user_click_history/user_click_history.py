@@ -6,8 +6,6 @@ import time
 import datetime
 import logging
 
-PATH = '/data/wangqianfa_offline/my_project_1'
-
 
 if __name__ == '__main__':
     start = time.time()
@@ -82,7 +80,7 @@ if __name__ == '__main__':
 
     print time.time() - start
     start = time.time()
-    with open('{0}/data/get_user_click_history/click_his.json'.format(PATH), 'w') as json_file:
+    with open('../data/get_user_click_history/click_his.json', 'w') as json_file:
         json.dump(user_click_his, json_file)
     print time.time() - start
 

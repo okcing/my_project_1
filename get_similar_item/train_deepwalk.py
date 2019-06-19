@@ -6,7 +6,7 @@ import gensim
 
 start = time.time()
 
-sentences = word2vec.LineSentence(datapath('/data/wangqianfa_offline/my_project_1/data/construct_train_data/train_data/user_item_random_walk_10h_filter.txt'))
+sentences = word2vec.LineSentence(datapath('/data/wangqianfa_online/my_project_1/data/construct_train_data/train_data/user_item_random_walk_10h_filter.txt'))
 
 
 model = word2vec.Word2Vec(sentences, size=32,window=5,min_count=0,workers=32,sg=1,hs=0, negative=5)

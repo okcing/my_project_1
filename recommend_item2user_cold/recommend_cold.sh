@@ -1,1 +1,1 @@
-python /data/wangqianfa_offline/my_project_1/recommend_item2user_cold/Mutilprocess_recommend_cold.py
+python /data/wangqianfa_online/my_project_1/recommend_item2user_cold/Mutilprocess_recommend_cold.py

@@ -3,7 +3,7 @@
 首先得到当前正排中的所有文章（优质文章筛选？？？），回溯点击历史，得到"文章-用户"文件
 '''
 import sys
-sys.path.append('/data/wangqianfa_offline/my_project_1')
+sys.path.append('/data/wangqianfa_online/my_project_1')
 from utils.keynews_pool import KeynewsPool
 from collections import defaultdict
 import os
